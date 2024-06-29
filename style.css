@@ -1,0 +1,142 @@
+.content-container {
+    width: 99%;
+    height: calc(99% - 40px);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+    align-items: center;
+    background-color: #EAEAEA;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    min-height: 240px;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 900px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-inputs-container {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-image {
+    border-radius: 20px;
+    width: 500px;
+    height: 650px;
+    background-size: cover;
+    background-image: url(https://www.capitalclub-nn.ru/wp-content/uploads/2020/03/bowling.jpg);
+}
+
+input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 16px;
+    gap: 16px;
+    width: 328px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #E1E6EE;
+    border-radius: 16px;
+}
+
+.submit-button {
+    width: 100%;
+    height: 46px;
+    left: 309px;
+    top: 683px;
+    background: #3B6A74;
+    border-radius: 15px;
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    font-stretch: 115;
+    font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 468, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+    color: #ffffff;
+}
+
+h2 {
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #2B2B2B;
+    margin-bottom: 20px;
+}
+
+p, label {
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #2B2B2B;
+    font-stretch: 115;
+    font-variation-settings: 'GRAD' 0, 'slnt' 0, 'XTRA' 468, 'XOPQ' 96, 'YOPQ' 79, 'YTLC' 514, 'YTUC' 712, 'YTAS' 750, 'YTDE' -203, 'YTFI' 738;
+}
+
+.booking-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 118px;
+    left: 0px;
+    top: 864px;
+    background: #3B6A74;
+}
+
+input[type="checkbox"] {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 16px;
+    gap: 16px;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid #E1E6EE;
+    border-radius: 4px;
+}
+input[type="date"] {
+    width: 160px;
+}
+input[type="time"] {
+    width: 160px;
+}
+
+.hidden {
+    display: none;
+}
+
+.row-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Сизиф | Бронирование дорожек</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+
+    </nav>
+
+    <main>
+        <div class="content-container" id="inputs-view">
+            <form class="form-container" id="booking-form" onsubmit="myFunction()">
+                <div class="form-inputs-container">
+
+                    <h2>Бронирование дорожки</h2>
+                    <label for="name-input">Ваше имя:</label>
+                    <input id="name-input" required pattern="^[А-Яа-яЁё\s]+$"
+                        title="Убедитесь, что ваше имя содержит только символы кириллицы">
+
+                    <label for="tel-input">Номер телефона:</label>
+                    <input id="tel-input" type="tel" required pattern="[0-9]{11}"
+                        title="Номер телефона должен содержать 11 цифр">
+
+
+
+                    <div class="row-container">
+                        <div>
+                            <label for="date-input">Дата бронирования:</label>
+                            <input id="date-input" type="date" min="2024-06-30" required>
+                        </div>
+                        <div>
+                            <label for="time-input">Время начала:</label>
+                            <input type="time" id="time-input" required />
+                        </div>
+                    </div>
+
+
+                    <label for="hours-input">Количество часов:</label>
+                    <input list="available-hours" id="hours-input" required />
+                    <datalist id="available-hours">
+                        <option value="1 час"></option>
+                        <option value="3 часа"></option>
+                        <option value="5 часов"></option>
+                    </datalist>
+
+                    <div class="row-container">
+                        <input type="checkbox" id="hours-input" checked required />
+                        <label for="hours-input">С правилами отмены бронирования и возвращения средств
+                            ознакомлен</label>
+                    </div>
+
+                    <input type="submit" class="submit-button">
+                </div>
+
+                <div class="form-image"></div>
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="booking-footer">
+
+    </footer>
+</body>
+
+<script>
+    function myFunction() {
+        let name = document.getElementById("name-input").value;
+        let tel = document.getElementById("tel-input").value;
+        let date = document.getElementById("date-input").value;
+        let time = document.getElementById("time-input").value;
+        let hours = document.getElementById("hours-input").value;
+        let message = `Бронирование было одобрено. Проверьте контактные данные:
+
+        Заказчик: ${name}
+        Контактный номер телефона: ${tel}
+        Дата: ${date}
+        Время: ${time}
+        Количество забронированных часов: ${hours}
+
+        При необходимости изменения данных свяжитесь с нами любым указанным на странице способом.`
+        alert(message);
+    }
+
+</script>
+
+</html>
